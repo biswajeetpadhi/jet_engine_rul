@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RUL_PREDICTION</title>
+</head>
+<body>
+<h1>RUL PREDICTION</h1>
+<h2>TEST DATA 2</h2>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="file2" id="file2"/>
+    <button type="submit">upload2</button>
+</form>
+<h3>ENGINE NUMBER: RUL</h3>
+<p>
+    {% if result == "upload file" %}
+        {{ result }}
+    {% else %}
+        {% for key, value in result.items() %}
+            <div>
+                {{ key }} : {{ value }}
+            </div>
+        {% endfor %}
+    {% endif %}
+</p>
+</body>
+</html>
+
+
+
